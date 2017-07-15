@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "server": "webpack && babel-node server.js"
+    "server": "webpack && babel-node server.js",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "babel": {
     "presets": [
