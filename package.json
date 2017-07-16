@@ -3,10 +3,14 @@
   "version": "1.1.0",
   "description": "Instagram inspired web app",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/jsnspr-instaphoto.git"
+  },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "NODE_ENV=production webpack && babel-node server.js",
     "build": "webpack",
-    "server": "webpack -p && babel-node server.js"
+    "server": "webpack && babel-node server.js"
   },
   "babel": {
     "presets": [
