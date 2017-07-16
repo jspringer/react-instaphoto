@@ -7,7 +7,7 @@ export default class ImageContainer extends React.Component {
 		const { imageList } = this.props;
 		return (
 			<div className="row">
-				{imageList.map(image => <Image id={image.key} {...image} />)}
+				{imageList.reverse().map(image => <Image id={image.key} {...image} />)}
 			</div>
 		);
 	}
